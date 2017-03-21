@@ -1,0 +1,23 @@
+* {
+  /*outline: 1px solid gray;*/ }
+
+.icon-bar {
+  color: #22d2d2; }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; }
+
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+.hero {
+  background: url(../img/fondo.jpg);
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/*# sourceMappingURL=index.css.map */

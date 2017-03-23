@@ -1,3 +1,7 @@
+h1 {
+  font-family: 'IM Fell English', serif;
+  font-size: 45px; }
+
 .navegador {
   z-index: 1000;
   position: absolute;
@@ -14,10 +18,11 @@
   text-align: center; }
 
 .hero {
-  background: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air-large.jpg);
+  background: url(../img/fondo.png);
   height: 600px;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative; }
 
 .particles-js-canvas-el {
   position: absolute;
@@ -48,9 +53,10 @@ div.pullUp a:before {
   left: 0px;
   bottom: 0px;
   content: '';
-  background: #FFF;
-  opacity: 0.3;
-  transition: all 0.3s; }
+  background: #22d2d2;
+  transition: all 0.3s;
+  z-index: -1;
+  color: #292929; }
 
 div.pullUp a:hover:before {
   height: 100%; }

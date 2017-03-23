@@ -3,8 +3,10 @@ $color-celeste: #00bbb3;
 $color-aqua:  #22d2d2;
 $color-gris2: #dce6e6;
 
-*{
-	/*outline: 1px solid gray;*/
+.navegador{
+	z-index: 1000;
+	position: absolute;
+	width: 100%;
 }
 .icon-bar{
 	color: $color-aqua;
@@ -21,8 +23,83 @@ $color-gris2: #dce6e6;
 }
 .hero
 {
-	background: url(../img/fondo.jpg);
+	background: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air-large.jpg);
+	//background: url(https://www.google.com.pe/imgres?imgurl=http%3A%2F%2Fwallpaperlayer.com%2Fimg%2F2015%2F5%2Flovely-night-sky-wallpaper-5774-6038-hd-wallpapers.jpg&imgrefurl=http%3A%2F%2Fwallpaperlayer.com%2Flovely-night-sky-wallpaper-5774.html&docid=uhCgGLfvkR89-M&tbnid=i_x244G4cQYMoM%3A&vet=10ahUKEwjWzerZ-OzSAhVFiJAKHXpxCkEQMwh3KFMwUw..i&w=2560&h=1600&safe=active&bih=694&biw=1280&q=hd%20background%20sky%20nigth&ved=0ahUKEwjWzerZ-OzSAhVFiJAKHXpxCkEQMwh3KFMwUw&iact=mrc&uact=8#h=1600&imgdii=muS4_aA6VgPVIM:&imgrc=i_x244G4cQYMoM:&vet=10ahUKEwjWzerZ-OzSAhVFiJAKHXpxCkEQMwh3KFMwUw..i&w=2560);
 	height: 600px;
 	background-size: cover;
 	background-attachment: fixed;
+}
+.particles-js-canvas-el{
+  position: absolute;
+  top: 0px;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	border-radius: 8px;
+	font-size: 0;
+	width: 100%; 
+}
+nav a {
+	line-height: 40px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+	color: white;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #1abc9c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #1abc9c;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #1abc9c;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #1abc9c;
 }
